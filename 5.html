@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+        integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Тестовая</title>
+</head>
+
+<style>
+    #heart {
+        position: relative;
+        width: 100px;
+        height: 90px;
+        animation: heartbeat 1s infinite;
+        margin: 0 auto
+    }
+
+    .wrapper p {
+        color: #fff;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+
+    #heart:before,
+    #heart:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: #fff;
+        -moz-border-radius: 50px 50px 0 0;
+        border-radius: 50px 50px 0 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+
+    #heart:after {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        -o-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+    }
+
+    @keyframes heartbeat {
+        0% {
+            transform: scale(.75);
+        }
+
+        20% {
+            transform: scale(1);
+        }
+
+        40% {
+            transform: scale(.75);
+        }
+
+        60% {
+            transform: scale(1);
+        }
+
+        80% {
+            transform: scale(.75);
+        }
+
+        100% {
+            transform: scale(.75);
+        }
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <!-- <a class="btn btn-light" id="button" href="2.html">Нажми сюда</a> -->
+        <div id="heart">
+        </div>
+        <p>Мое сердечко рядом с тобой</p>
+    </div>
+</body>
+
+</html>
